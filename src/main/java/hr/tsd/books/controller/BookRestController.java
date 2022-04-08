@@ -18,6 +18,12 @@ public class BookRestController {
     public List<Book> getBooks(){
         return bookRepo.findAll();
     }
+        //localhost:8081/book?id=2
+    //public Book getBook(@RequestParam(defaultValue = "1") int id)
+    @GetMapping("/book")
+    public Book getBook(@RequestParam int id){
+        return bookRepo.findById(id).orElse(null);
+    }
     @PostMapping("")
     public String addBook(@RequestBody Book book){
         bookRepo.save(book);
