@@ -1,6 +1,6 @@
 package hr.tsd.books.model;
 
-import jdk.nashorn.internal.objects.annotations.Constructor;
+//import jdk.nashorn.internal.objects.annotations.Constructor;
 import lombok.*;
 
 import javax.persistence.Entity;
